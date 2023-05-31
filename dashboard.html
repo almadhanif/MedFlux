@@ -13,6 +13,9 @@
       rel="stylesheet"
     />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -47,57 +50,106 @@
     <!-- sidebar section start -->
     <aside
       id="sidebar"
-      class="bg-[#FFFAF0] fixed z-10 left-[-300px] pb-3 px-6 h-screen flex flex-col justify-between border-r transition duration-300 lg:w-[25%] xl:w-[20%] 2xl:w-[15%] lg:left-0"
+      class="bg-darkblue fixed z-10 left-[-300px] pb-3 px-6 h-screen flex flex-col justify-between border-r transition duration-300 lg:w-[25%] xl:w-[20%] 2xl:w-[15%] lg:left-0"
     >
       <div>
-        <div class="-mx-6 px-6 py-4">
+        <div class="px-6 py-4 mt-10">
           <a href="#" title="home">
             <img
-              src="aset/logo-transparent-small.png"
-              class="w-40 h-14"
+              src="aset/mainLogo.png"
+              class="w-32 h-32"
               alt="fit batik logo"
             />
           </a>
         </div>
 
-        <ul class="space-y-2 font-sans tracking-wide mt-8">
-          <h2 class="font-sans font-bold text-2xl px-4 pb-2">Explore</h2>
-          <li>
+        <ul class="space-y-4 font-sans tracking-wide mt-8">
+          <li class="border-l-4 border-softgreen">
             <a
               href="dashboard.html"
               aria-label="dashboard"
-              class="relative px-4 py-3 bg-kuning flex items-center space-x-4 rounded-xl text-black hover:text-white transition ease-in-out duration-500 hover:bg-gelap"
+              class="relative px-4 py-3 flex items-center space-x-4 group transition ease-in-out delay-150 hover:translate-x-1 hover:bg-white duration-500"
             >
-              <img class="w-12 h-10" src="aset/logo-clothes.jpg" alt="" />
-              <span class="-mr-1 font-medium">Clothing</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="40"
+                height="40"
+                class="text-softgreen fill-current group-hover:text-cyan-600"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z"
+                ></path>
+              </svg>
+              <span
+                class="-mr-1 font-medium font-nobile pt-2 text-softgreen group-hover:text-cyan-600"
+                >Dashboard</span
+              >
             </a>
           </li>
-          <li>
+          <li class="ml-1">
             <a
-              href="dashboard.html"
+              href="devices.html"
               aria-label="dashboard"
-              class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-black hover:text-white transition ease-in-out duration-500 hover:bg-gelap"
+              class="relative px-4 py-3 flex items-center space-x-4 group"
             >
-              <img
-                class="w-11 h-10"
-                src="aset/logo-short-removebg-preview.png"
-                alt=""
-              />
-              <span class="-mr-1 font-medium">Pants</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                width="40"
+                height="40"
+                class="text-slate-200 group-hover:text-slate-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+
+              <span
+                class="-mr-1 font-medium font-nobile pt-2 text-slate-200 group-hover:text-slate-400"
+                >Devices</span
+              >
             </a>
           </li>
-          <li>
+          <li class="ml-2">
             <a
-              href="dashboard.html"
+              href="tools.html"
               aria-label="dashboard"
-              class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-black hover:text-white transition ease-in-out duration-500 hover:bg-gelap"
+              class="relative px-4 py-3 flex items-center space-x-4 group"
             >
-              <img
-                class="w-11 h-14 pl-2"
-                src="aset/logo-bag-removebg-preview.png"
-                alt=""
-              />
-              <span class="-mr-1 font-medium">Bag</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                width="35"
+                height="35"
+                class="text-slate-200 group-hover:text-slate-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+                />
+              </svg>
+
+              <span
+                class="-mr-1 font-medium font-nobile pt-2 text-slate-200 group-hover:text-slate-400"
+                >Tools</span
+              >
             </a>
           </li>
         </ul>
@@ -911,4 +963,8 @@
 
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

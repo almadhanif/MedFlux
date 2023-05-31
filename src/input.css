@@ -24,3 +24,6 @@
 .bg {
   @apply text-[#373737] font-bold;
 }
+.bgTransitionColor {
+  @apply relative px-4 py-3 flex items-center space-x-4 group transition ease-in-out delay-150 hover:translate-x-1 hover:bg-white duration-500;
+}

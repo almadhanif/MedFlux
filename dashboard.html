@@ -4,33 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
-    />
-    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <title>Login</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-    />
-
-    <!-- auto slide -->
-    <!-- Auto Slide Carousel -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
     />
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,24 +19,21 @@
         theme: {
           container: {
             center: true,
-            padding: "16px",
+            padding: '16px',
           },
           extend: {
             colors: {
-              darkblue: "#25316D",
-              ijo: "#418C60",
-              ijogelap: "#5A9298",
-              ijoterang: "#66A399",
-              kuning: "#FFD700",
-              gelap: "#373737",
-              primer: "#FFFAF0",
-              terang: "#8CBAB4",
+              kuning: '#FFCA4B',
+              darkblue: '#000C66',
+              softblue: '#D4F1F4',
+              softgreen: '#75E6DA',
             },
             fontFamily: {
-              inter: ["Inter"],
+              poppins: ['Poppins'],
+              nobile: ['Nobile'],
             },
             screens: {
-              "2xl": "1320px",
+              '2xl': '1320px',
             },
           },
         },
@@ -64,7 +41,7 @@
     </script>
 
     <link href="dist/output.css" rel="stylesheet" />
-    <link rel="icon" href="aset/iconhead.png" type="image/gif" sizes="5x5" />
+    <link rel="icon" href="aset/mainLogo.png" type="image/gif" sizes="5x5" />
   </head>
   <body>
     <!-- sidebar section start -->
@@ -153,7 +130,7 @@
     <!-- Sidebar section end -->
 
     <!-- Content section start -->
-    <div class="ml-auto bg-primer shadow-md  lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
+    <div class="ml-auto bg-primer shadow-md lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
       <div class="z-10 top-0 h-16 border-b">
         <div class="px-6 flex items-center">
           <form class="w-[60%] lg:w-2/3 pt-3">
@@ -341,104 +318,102 @@
     <!-- Content section end -->
 
     <!-- Content section start -->
-    <div class="ml-auto  lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
+    <div class="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
       <section
-          id="carouselExampleCrossfade"
-          class="carousel slide carousel-fade ml-20 relative"
-          data-bs-ride="carousel"
+        id="carouselExampleCrossfade"
+        class="carousel slide carousel-fade ml-20 relative"
+        data-bs-ride="carousel"
+      >
+        <div
+          class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4"
         >
-          <div
-            class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0  mb-4"
-          >
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCrossfade"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCrossfade"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCrossfade"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCrossfade"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-          </div>
-          <div class="carousel-inner relative w-full overflow-hidden">
-            <div class="carousel-item active float-left w-full">
-              <img
-                src="aset/promo/biru.png"
-                class="block w-full"
-                alt="Foto Outdoor 1"
-              />
-            </div>
-            <div class="carousel-item float-left w-full">
-              <img
-                src="aset/promo/yellow.png"
-                class="block w-full"
-                alt="Foto Outdoor 2"
-              />
-            </div>
-            <div class="carousel-item float-left w-full">
-              <img
-                src="aset/promo/pink.png"
-                class="block w-full"
-                alt="Foto Outdoor 3"
-              />
-            </div>
-            <div class="carousel-item float-left w-full">
-              <img
-                src="aset/promo/Group 4.png"
-                class="block w-full"
-                alt="Foto Outdoor 3"
-              />
-            </div>
-          </div>
           <button
-            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
             type="button"
             data-bs-target="#carouselExampleCrossfade"
-            data-bs-slide="prev"
-          >
-            <span
-              class="carousel-control-prev-icon inline-block bg-no-repeat"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
           <button
-            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
             type="button"
             data-bs-target="#carouselExampleCrossfade"
-            data-bs-slide="next"
-          >
-            <span
-              class="carousel-control-next-icon inline-block bg-no-repeat"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </section>
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCrossfade"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCrossfade"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <div class="carousel-item active float-left w-full">
+            <img
+              src="aset/promo/biru.png"
+              class="block w-full"
+              alt="Foto Outdoor 1"
+            />
+          </div>
+          <div class="carousel-item float-left w-full">
+            <img
+              src="aset/promo/yellow.png"
+              class="block w-full"
+              alt="Foto Outdoor 2"
+            />
+          </div>
+          <div class="carousel-item float-left w-full">
+            <img
+              src="aset/promo/pink.png"
+              class="block w-full"
+              alt="Foto Outdoor 3"
+            />
+          </div>
+          <div class="carousel-item float-left w-full">
+            <img
+              src="aset/promo/Group 4.png"
+              class="block w-full"
+              alt="Foto Outdoor 3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#carouselExampleCrossfade"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#carouselExampleCrossfade"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
 
-      <div class=" pt-2">
-        
-        <div class="px-5  mx-auto lg:px-32">
-          
-          <div class="flex flex-wrap ">
-            <div class=" flex-wrap w-full  lg:w-1/2 ">
+      <div class="pt-2">
+        <div class="px-5 mx-auto lg:px-32">
+          <div class="flex flex-wrap">
+            <div class="flex-wrap w-full lg:w-1/2">
               <div class="w-full h-60 lg:h-40 p-1">
                 <img
                   alt="gallery"
@@ -449,7 +424,7 @@
               <div class="w-full h-60 lg:h-40 p-1">
                 <img
                   alt="gallery"
-                  class=" object-cover object-center w-full h-full rounded-lg"
+                  class="object-cover object-center w-full h-full rounded-lg"
                   src="aset/promo/Group 4.png"
                 />
               </div>
@@ -460,7 +435,7 @@
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
                     <div class="py-4">
@@ -480,7 +455,8 @@
                           Rp220.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -494,7 +470,7 @@
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
                     <div class="py-4">
@@ -514,7 +490,8 @@
                           Rp250.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -523,46 +500,45 @@
                   </div>
                 </div>
               </div>
-              
             </div>
-           
           </div>
         </div>
       </div>
     </div>
     <!-- Content section end -->
     <!-- Content section start -->
-    <div class="ml-auto  lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
-      <div class=" pt-2">
-        <div class="px-5  mx-auto lg:px-32">
-          <div class="flex flex-wrap ">
+    <div class="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
+      <div class="pt-2">
+        <div class="px-5 mx-auto lg:px-32">
+          <div class="flex flex-wrap">
             <div class="flex flex-wrap w-full lg:w-1/2">
               <div class="w-full lg:w-1/2 p-1">
                 <!-- button start -->
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
-                    <div >
+                    <div>
                       <img
                         src="aset/batik (9).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48  mx-auto"
+                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
                         alt="gambar batik putih"
                       />
 
                       <h5
                         class="font-sans capitalize text-md text-gray-600 text-center mt-4"
                       >
-                        batik pria semi sutra  "surasakti black"
+                        batik pria semi sutra "surasakti black"
                       </h5>
                       <div class="mt-2 flex justify-center gap-4">
                         <h3 class="text-[22px] font-bold text-gray-700">
                           Rp400.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -576,13 +552,13 @@
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
-                    <div >
+                    <div>
                       <img
                         src="aset/batik (5).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48  mx-auto"
+                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
                         alt="gambar batik putih"
                       />
 
@@ -596,7 +572,8 @@
                           Rp325.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -605,9 +582,8 @@
                   </div>
                 </div>
               </div>
-              
             </div>
-            <div class=" flex-wrap w-full  lg:w-1/2 ">
+            <div class="flex-wrap w-full lg:w-1/2">
               <div class="w-full h-60 lg:h-40 p-1">
                 <img
                   alt="gallery"
@@ -615,7 +591,7 @@
                   src="aset/promo/yellow.png"
                 />
               </div>
-              <div class="w-full h-60 lg:h-40   p-1">
+              <div class="w-full h-60 lg:h-40 p-1">
                 <img
                   alt="gallery"
                   class="block object-cover object-center w-full h-full rounded-lg"
@@ -623,29 +599,27 @@
                 />
               </div>
             </div>
-            
-           
           </div>
         </div>
       </div>
     </div>
-    <div class="ml-auto  lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
-      <div class=" pt-2">
-        <div class="px-5  mx-auto lg:px-32">
-          <div class="flex flex-wrap ">
-            <div class="flex flex-wrap w-full ">
+    <div class="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
+      <div class="pt-2">
+        <div class="px-5 mx-auto lg:px-32">
+          <div class="flex flex-wrap">
+            <div class="flex flex-wrap w-full">
               <div class="w-full lg:w-1/4 p-1">
                 <!-- button start -->
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
-                    <div >
+                    <div>
                       <img
                         src="aset/batik (7).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48  mx-auto"
+                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
                         alt="gambar batik putih"
                       />
 
@@ -659,7 +633,8 @@
                           Rp450.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -673,13 +648,13 @@
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
-                    <div >
+                    <div>
                       <img
                         src="aset/batik (1).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48  mx-auto"
+                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
                         alt="gambar batik putih"
                       />
 
@@ -693,7 +668,8 @@
                           Rp400.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -707,13 +683,13 @@
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
-                    <div >
+                    <div>
                       <img
                         src="aset/batik (8).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48  mx-auto"
+                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
                         alt="gambar batik putih"
                       />
 
@@ -727,7 +703,8 @@
                           Rp450.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -741,13 +718,13 @@
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
-                    <div >
+                    <div>
                       <img
                         src="aset/batik (2).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48  mx-auto"
+                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
                         alt="gambar batik putih"
                       />
 
@@ -761,7 +738,8 @@
                           Rp450.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -771,30 +749,27 @@
                 </div>
               </div>
             </div>
-            
-            
-           
           </div>
         </div>
       </div>
     </div>
-    <div class="ml-auto  lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
-      <div class=" pt-2">
-        <div class="px-5  mx-auto lg:px-32">
-          <div class="flex flex-wrap ">
-            <div class="flex flex-wrap w-full ">
+    <div class="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
+      <div class="pt-2">
+        <div class="px-5 mx-auto lg:px-32">
+          <div class="flex flex-wrap">
+            <div class="flex flex-wrap w-full">
               <div class="w-full lg:w-1/2 p-1">
                 <!-- button start -->
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
-                    <div >
+                    <div>
                       <img
                         src="aset/batik (3).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48  mx-auto"
+                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
                         alt="gambar batik putih"
                       />
 
@@ -808,7 +783,8 @@
                           Rp450.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -822,13 +798,13 @@
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
-                    <div >
+                    <div>
                       <img
                         src="aset/batik (5).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48  mx-auto"
+                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
                         alt="gambar batik putih"
                       />
 
@@ -842,7 +818,8 @@
                           Rp220.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -856,13 +833,13 @@
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
-                    <div >
+                    <div>
                       <img
                         src="aset/batik (7).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48  mx-auto"
+                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
                         alt="gambar batik putih"
                       />
 
@@ -876,7 +853,8 @@
                           Rp350.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -890,13 +868,13 @@
                 <div class="w-full h-full">
                   <!-- graph -->
                   <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl  px-6  rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
                   >
                     <!-- text header -->
-                    <div >
+                    <div>
                       <img
                         src="aset/batik (10).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48  mx-auto"
+                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
                         alt="gambar batik putih"
                       />
 
@@ -910,7 +888,8 @@
                           Rp255.000
                         </h3>
                         <div class="flex items-end gap-1 text-red-500">
-                          <span class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                          <span
+                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
                             >Promo</span
                           >
                         </div>
@@ -920,9 +899,6 @@
                 </div>
               </div>
             </div>
-            
-            
-           
           </div>
         </div>
       </div>
@@ -932,7 +908,7 @@
 
   <!-- Script section -->
   <script src="dist/js/script.js"></script>
-  
+
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </html>

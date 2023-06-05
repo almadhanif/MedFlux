@@ -1,0 +1,14 @@
+day 1 :
+membuat login page untuk admin
+day 2 :
+membuat login page untuk owner
+day 3:
+memperbaiki logo utama dengan ditambahkan ring di luarnya
+membuat sidebar dari bagian dashboard
+merubah links di sidebar menjadi logo disamping nama nav, bkn logo diatas nama nav
+mengganti logo tools menjadi logo di heroicons.com agar bisa menggunakan svg secara free
+
+membuat bagian content dari dashboard dengan background berwarna slate-50
+membuat responsive tampilan website dengan ditambah hamburger menu untuk menampilkan sidebar
+
+day 4:

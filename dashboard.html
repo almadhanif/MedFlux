@@ -48,121 +48,24 @@
   </head>
   <body>
     <!-- sidebar section start -->
-    <aside
-      id="sidebar"
-      class="bg-darkblue fixed z-10 left-[-300px] pb-3 px-6 h-screen flex flex-col justify-between border-r transition duration-300 lg:w-[25%] xl:w-[20%] 2xl:w-[15%] lg:left-0"
-    >
-      <div>
-        <div class="px-6 py-4 mt-10">
-          <a href="#" title="home">
+
+    <aside id="sidebar" class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-darkblue opacity-25"></div>
+      <nav
+        class="fixed bg-darkblue top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
             <img
               src="aset/mainLogo.png"
               class="w-32 h-32"
               alt="Permata Indah logo"
             />
           </a>
-        </div>
-
-        <ul class="space-y-4 font-sans tracking-wide mt-8">
-          <li class="border-l-4 border-softgreen">
-            <a
-              href="dashboard.html"
-              aria-label="dashboard"
-              class="relative px-4 py-3 flex items-center space-x-4 group transition ease-in-out delay-150 hover:translate-x-1 hover:bg-white duration-500"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="40"
-                height="40"
-                class="text-softgreen fill-current group-hover:text-cyan-600"
-                viewBox="0 0 48 48"
-              >
-                <path
-                  d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z"
-                ></path>
-              </svg>
-              <span
-                class="-mr-1 font-medium font-nobile pt-2 text-softgreen group-hover:text-cyan-600"
-                >Dashboard</span
-              >
-            </a>
-          </li>
-          <li class="ml-1">
-            <a
-              href="devices.html"
-              aria-label="dashboard"
-              class="relative px-4 py-3 flex items-center space-x-4 group"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                width="40"
-                height="40"
-                class="text-slate-200 group-hover:text-slate-400"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
-
-              <span
-                class="-mr-1 font-medium font-nobile pt-2 text-slate-200 group-hover:text-slate-400"
-                >Devices</span
-              >
-            </a>
-          </li>
-          <li class="ml-2">
-            <a
-              href="tools.html"
-              aria-label="dashboard"
-              class="relative px-4 py-3 flex items-center space-x-4 group"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                width="35"
-                height="35"
-                class="text-slate-200 group-hover:text-slate-400"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                />
-              </svg>
-
-              <span
-                class="-mr-1 font-medium font-nobile pt-2 text-slate-200 group-hover:text-slate-400"
-                >Tools</span
-              >
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
-        <a href="login.html">
-          <button
-            class="px-4 py-3 flex items-center space-x-4 rounded-md group text-slate-200 transition ease-in-out duration-500 hover:bg-red-500"
-          >
+          <button class="navbar-close">
             <svg
+              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -171,177 +74,135 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-              />
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
             </svg>
-            <span class="group-hover:text-white">Logout</span>
           </button>
-        </a>
-      </div>
-    </aside>
-    <!-- Sidebar section end -->
-
-    <!-- Content section start -->
-    <div class="ml-auto bg-primer shadow-md lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
-      <div class="z-10 top-0 h-16 border-b">
-        <div class="px-6 flex items-center">
-          <form class="w-[60%] lg:w-2/3 pt-3">
-            <div class="flex">
-              <label
-                for="location-search"
-                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-                >Your Email</label
+        </div>
+        <div>
+          <ul>
+            <li class="border-l-4 border-softgreen">
+              <a
+                href="dashboard.html"
+                aria-label="dashboard"
+                class="relative px-4 py-3 flex items-center space-x-4 group transition ease-in-out delay-150 hover:translate-x-1 hover:bg-white duration-500"
               >
-              <button
-                id="dropdown-button-2"
-                data-dropdown-toggle="dropdown-search-city"
-                class="flex-shrink-0 inline-flex items-center py-2.5 px-2 text-sm font-medium text-center text-gray-500 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
-                type="button"
-              >
-                <img
-                  class="w-7 h-5 mr-px"
-                  src="aset/logo-clothes.jpg"
-                  alt="logo baju"
-                />
-                Clothing
                 <svg
-                  aria-hidden="true"
-                  class="w-4 h-4 ml-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="40"
+                  height="40"
+                  class="text-softgreen fill-current group-hover:text-cyan-600"
+                  viewBox="0 0 48 48"
                 >
                   <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
+                    d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z"
                   ></path>
                 </svg>
-              </button>
-              <div
-                id="dropdown-search-city"
-                class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700"
-                data-popper-reference-hidden=""
-                data-popper-escaped=""
-                data-popper-placement="top"
-                style="
-                  position: absolute;
-                  inset: auto auto 0px 0px;
-                  margin: 0px;
-                  transform: translate3d(897px, 5637px, 0px);
-                "
+                <span
+                  class="-mr-1 font-medium font-nobile pt-2 text-softgreen group-hover:text-cyan-600"
+                  >Dashboard</span
+                >
+              </a>
+            </li>
+            <li class="ml-1">
+              <a
+                href="devices.html"
+                aria-label="dashboard"
+                class="relative px-4 py-3 flex items-center space-x-4 group"
               >
-                <ul
-                  class="py-1 text-sm text-gray-700 dark:text-gray-200"
-                  aria-labelledby="dropdown-button-2"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  width="40"
+                  height="40"
+                  class="text-slate-200 group-hover:text-slate-400"
                 >
-                  <li>
-                    <button
-                      type="button"
-                      class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                      role="menuitem"
-                    >
-                      <div class="inline-flex items-center">
-                        <img
-                          class="w-8 h-8 ml-1 mr-2"
-                          src="aset/logo-clothes.jpg"
-                          alt="logo baju"
-                        />
-                        Clothing
-                      </div>
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      type="button"
-                      class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                      role="menuitem"
-                    >
-                      <div class="inline-flex items-center">
-                        <img
-                          class="w-8 h-8 mr-3"
-                          src="aset/logo-short.jpg"
-                          alt="logo baju"
-                        />
-                        Pants
-                      </div>
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      type="button"
-                      class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                      role="menuitem"
-                    >
-                      <div class="inline-flex items-center">
-                        <img
-                          class="w-7 h-9 ml-1 mr-3"
-                          src="aset/logo-bag-removebg-preview.png"
-                          alt="logo baju"
-                        />
-                        Bag
-                      </div>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <div class="relative w-full">
-                <input
-                  type="search"
-                  id="location-search"
-                  class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-kuning focus:border-kuning"
-                  placeholder="Cari Barang"
-                  required
-                />
-                <button
-                  type="submit"
-                  class="absolute top-0 right-0 p-2.5 text-sm font-medium bg-[#373737] rounded-r-lg border border-black text-[#FFD700] hover:bg-black focus:ring-4 focus:outline-none focus:ring-kuning dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+
+                <span
+                  class="-mr-1 font-medium font-nobile pt-2 text-slate-200 group-hover:text-slate-400"
+                  >Devices</span
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    ></path>
-                  </svg>
-                  <span class="sr-only">Search</span>
-                </button>
-              </div>
-            </div>
-          </form>
+              </a>
+            </li>
+            <li class="ml-2">
+              <a
+                href="tools.html"
+                aria-label="dashboard"
+                class="relative px-4 py-3 flex items-center space-x-4 group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  width="35"
+                  height="35"
+                  class="text-slate-200 group-hover:text-slate-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+                  />
+                </svg>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 ml-4 lg:ml-20 mt-2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-            />
-          </svg>
-          <p class="mt-2 mr-8">Cart : 2</p>
-          <img
-            src="aset/al.jpg"
-            alt="Avatar Pemilik"
-            class="hidden md:flex w-8 h-8 mt-2 rounded-full object-cover"
-          />
-          <p class="hidden md:flex mt-2 ml-2">
-            <span class="font-bold mr-px">Hello</span> Al
-          </p>
-
+                <span
+                  class="-mr-1 font-medium font-nobile pt-2 text-slate-200 group-hover:text-slate-400"
+                  >Tools</span
+                >
+              </a>
+            </li>
+          </ul>
+          <div class="px-6 -mx-6 mt-96 items-center border-t">
+            <a href="login.html">
+              <button
+                class="px-4 py-3 flex items-center space-x-4 rounded-md group text-slate-200 transition ease-in-out duration-500 hover:bg-red-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-10 w-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                  />
+                </svg>
+                <span class="group-hover:text-white font-nobile">Logout</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+    <!-- Sidebar section end -->
+    <!-- Content section start -->
+    <section
+      class="ml-auto bg-darkblue lg:w-[75%] xl:w-[80%] 2xl:w-[85%] 2xl:h-full"
+    >
+      <div class="z-10 top-0 h-4">
+        <div class="px-6 flex items-center">
           <button
             id="hamburger"
             name="hamburger"
@@ -366,406 +227,469 @@
           class="hover:text-red-400 mb-10 float-right"
         ></button>
       </div>
-    </div>
+      <div class="bg-slate-50 rounded-t-[50px]">
+        <!-- Content section start -->
+        <div class="ml-auto lg:w-full xl:w-full 2xl:w-[92%]">
+          <div class="">
+            <div class="px-5 mx-auto lg:px-16 pt-5">
+              <div
+                class="w-11/12 lg:w-full flex justify-between mb-5 h-20 lg:h-14 bg-slate-200 rounded-full"
+              >
+                <p
+                  class="font-poppins uppercase font-semibold text-left pl-4 lg:pt-4 pt-7"
+                >
+                  permata indah hospital
+                </p>
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    class="mt-6 w-10 lg:mt-3 h-8 lg:w-32 2xl:w-28 fill-current text-slate-600"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M 12 2 C 11.172 2 10.5 2.672 10.5 3.5 L 10.5 4.1953125 C 7.9131836 4.862095 6 7.2048001 6 10 L 6 16 L 4.4648438 17.15625 L 4.4628906 17.15625 A 1 1 0 0 0 4 18 A 1 1 0 0 0 5 19 L 12 19 L 19 19 A 1 1 0 0 0 20 18 A 1 1 0 0 0 19.537109 17.15625 L 18 16 L 18 10 C 18 7.2048001 16.086816 4.862095 13.5 4.1953125 L 13.5 3.5 C 13.5 2.672 12.828 2 12 2 z M 10 20 C 10 21.1 10.9 22 12 22 C 13.1 22 14 21.1 14 20 L 10 20 z"
+                    ></path>
+                  </svg>
+                  <img
+                    src="aset/1st.png"
+                    class="w-6 h-6 mt-5 lg:mt-2 -ml-5 lg:-ml-8 xl:-ml-8 2xl:-ml-[22px] lg:mr-5 mr-1"
+                    alt="notification logo"
+                  />
+                  <img
+                    src="aset/al.jpg"
+                    alt="Avatar User"
+                    class="hidden md:flex w-8 h-8 mt-6 lg:mt-3 rounded-full object-cover"
+                  />
+                  <p
+                    class="font-poppins border uppercase font-semibold text-left ml-2 lg:pt-4 pt-6"
+                  >
+                    Almadhani
+                  </p>
+                  <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
+                    <div class="z-10 top-0 h-16 lg:pt-2.5">
+                      <div
+                        class="px-2 flex items-center justify-between space-x-4 2xl:container"
+                      >
+                        <div class="lg:hidden">
+                          <button
+                            class="navbar-burger flex items-center text-blue-600 py-3"
+                          >
+                            <svg
+                              class="block absolute h-8 w-8 mt-12 right-7 fill-current"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <title>Mobile menu</title>
+                              <path
+                                d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-wrap">
+                <div class="flex flex-wrap w-full lg:w-1/2">
+                  <div class="w-full lg:w-1/2 p-1">
+                    <!-- button start -->
+                    <div class="w-full h-full">
+                      <!-- graph -->
+                      <div
+                        class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                      >
+                        <!-- text header -->
+                        <div>
+                          <img
+                            src="aset/batik (9).png"
+                            class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
+                            alt="gambar batik putih"
+                          />
+
+                          <h5
+                            class="font-sans capitalize text-md text-gray-600 text-center mt-4"
+                          >
+                            batik pria semi sutra "surasakti black"
+                          </h5>
+                          <div class="mt-2 flex justify-center gap-4">
+                            <h3 class="text-[22px] font-bold text-gray-700">
+                              Rp400.000
+                            </h3>
+                            <div class="flex items-end gap-1 text-red-500">
+                              <span
+                                class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                                >Promo</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full lg:w-1/2 p-1">
+                    <!-- button start -->
+                    <div class="w-full h-full">
+                      <!-- graph -->
+                      <div
+                        class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                      >
+                        <!-- text header -->
+                        <div>
+                          <img
+                            src="aset/batik (5).png"
+                            class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
+                            alt="gambar batik putih"
+                          />
+
+                          <h5
+                            class="font-sans capitalize text-md text-gray-600 text-center mt-4"
+                          >
+                            batik pria katun Premium "jayawikata black"
+                          </h5>
+                          <div class="mt-2 flex justify-center gap-4">
+                            <h3 class="text-[22px] font-bold text-gray-700">
+                              Rp325.000
+                            </h3>
+                            <div class="flex items-end gap-1 text-red-500">
+                              <span
+                                class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                                >Promo</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-wrap w-full lg:w-1/2">
+                  <div class="w-full h-60 lg:h-40 p-1">
+                    <img
+                      alt="gallery"
+                      class="block object-cover object-center w-full h-full rounded-lg"
+                      src="aset/promo/yellow.png"
+                    />
+                  </div>
+                  <div class="w-full h-60 lg:h-40 p-1">
+                    <img
+                      alt="gallery"
+                      class="block object-cover object-center w-full h-full rounded-lg"
+                      src="aset/promo/pink.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
+          <div class="pt-2">
+            <div class="px-5 mx-auto lg:px-16">
+              <div class="flex flex-wrap">
+                <div class="flex flex-wrap w-full">
+                  <div class="w-full lg:w-1/4 p-1">
+                    <!-- button start -->
+                    <div class="w-full h-full">
+                      <!-- graph -->
+                      <div
+                        class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                      >
+                        <!-- text header -->
+                        <div>
+                          <img
+                            src="aset/batik (7).png"
+                            class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
+                            alt="gambar batik putih"
+                          />
+
+                          <h5
+                            class="font-sans capitalize text-md text-gray-600 text-center mt-4"
+                          >
+                            batik pria katun full furing "jalasndha black"
+                          </h5>
+                          <div class="mt-2 flex justify-center gap-4">
+                            <h3 class="text-[22px] font-bold text-gray-700">
+                              Rp450.000
+                            </h3>
+                            <div class="flex items-end gap-1 text-red-500">
+                              <span
+                                class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                                >Promo</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full lg:w-1/4 p-1">
+                    <!-- button start -->
+                    <div class="w-full h-full">
+                      <!-- graph -->
+                      <div
+                        class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                      >
+                        <!-- text header -->
+                        <div>
+                          <img
+                            src="aset/batik (1).png"
+                            class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
+                            alt="gambar batik putih"
+                          />
+
+                          <h5
+                            class="font-sans capitalize text-md text-gray-600 text-center mt-4"
+                          >
+                            batik pria katun full furing "abaswa purple"
+                          </h5>
+                          <div class="mt-2 flex justify-center gap-4">
+                            <h3 class="text-[22px] font-bold text-gray-700">
+                              Rp400.000
+                            </h3>
+                            <div class="flex items-end gap-1 text-red-500">
+                              <span
+                                class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                                >Promo</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full lg:w-1/4 p-1">
+                    <!-- button start -->
+                    <div class="w-full h-full">
+                      <!-- graph -->
+                      <div
+                        class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                      >
+                        <!-- text header -->
+                        <div>
+                          <img
+                            src="aset/batik (8).png"
+                            class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
+                            alt="gambar batik putih"
+                          />
+
+                          <h5
+                            class="font-sans capitalize text-md text-gray-600 text-center mt-4"
+                          >
+                            batik pria katun full furing "senani black"
+                          </h5>
+                          <div class="mt-2 flex justify-center gap-4">
+                            <h3 class="text-[22px] font-bold text-gray-700">
+                              Rp450.000
+                            </h3>
+                            <div class="flex items-end gap-1 text-red-500">
+                              <span
+                                class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                                >Promo</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full lg:w-1/4 p-1">
+                    <!-- button start -->
+                    <div class="w-full h-full">
+                      <!-- graph -->
+                      <div
+                        class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                      >
+                        <!-- text header -->
+                        <div>
+                          <img
+                            src="aset/batik (2).png"
+                            class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
+                            alt="gambar batik putih"
+                          />
+
+                          <h5
+                            class="font-sans capitalize text-md text-gray-600 text-center mt-4"
+                          >
+                            batik pria katun full furing "durdharsa navy"
+                          </h5>
+                          <div class="mt-2 flex justify-center gap-4">
+                            <h3 class="text-[22px] font-bold text-gray-700">
+                              Rp450.000
+                            </h3>
+                            <div class="flex items-end gap-1 text-red-500">
+                              <span
+                                class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                                >Promo</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
+          <div class="pt-2">
+            <div class="px-5 mx-auto lg:px-32">
+              <div class="flex flex-wrap">
+                <div class="flex flex-wrap w-full">
+                  <div class="w-full lg:w-1/2 p-1">
+                    <!-- button start -->
+                    <div class="w-full h-full">
+                      <!-- graph -->
+                      <div
+                        class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                      >
+                        <!-- text header -->
+                        <div>
+                          <img
+                            src="aset/batik (3).png"
+                            class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
+                            alt="gambar batik putih"
+                          />
+
+                          <h5
+                            class="font-sans capitalize text-md text-gray-600 text-center mt-4"
+                          >
+                            batik pria katun full furing "Dretapara Orange"
+                          </h5>
+                          <div class="mt-2 flex justify-center gap-4">
+                            <h3 class="text-[22px] font-bold text-gray-700">
+                              Rp450.000
+                            </h3>
+                            <div class="flex items-end gap-1 text-red-500">
+                              <span
+                                class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                                >Promo</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full lg:w-1/2 p-1">
+                    <!-- button start -->
+                    <div class="w-full h-full">
+                      <!-- graph -->
+                      <div
+                        class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                      >
+                        <!-- text header -->
+                        <div>
+                          <img
+                            src="aset/batik (5).png"
+                            class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
+                            alt="gambar batik putih"
+                          />
+
+                          <h5
+                            class="font-sans capitalize text-md text-gray-600 text-center mt-4"
+                          >
+                            batik pria katun no furing "Jayawikata Black"
+                          </h5>
+                          <div class="mt-2 flex justify-center gap-4">
+                            <h3 class="text-[22px] font-bold text-gray-700">
+                              Rp220.000
+                            </h3>
+                            <div class="flex items-end gap-1 text-red-500">
+                              <span
+                                class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                                >Promo</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full lg:w-1/2 p-1">
+                    <!-- button start -->
+                    <div class="w-full h-full">
+                      <!-- graph -->
+                      <div
+                        class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                      >
+                        <!-- text header -->
+                        <div>
+                          <img
+                            src="aset/batik (7).png"
+                            class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
+                            alt="gambar batik putih"
+                          />
+
+                          <h5
+                            class="font-sans capitalize text-md text-gray-600 text-center mt-4"
+                          >
+                            batik pria katun full furing "Rukma Black"
+                          </h5>
+                          <div class="mt-2 flex justify-center gap-4">
+                            <h3 class="text-[22px] font-bold text-gray-700">
+                              Rp350.000
+                            </h3>
+                            <div class="flex items-end gap-1 text-red-500">
+                              <span
+                                class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                                >Promo</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full lg:w-1/2 p-1">
+                    <!-- button start -->
+                    <div class="w-full h-full">
+                      <!-- graph -->
+                      <div
+                        class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
+                      >
+                        <!-- text header -->
+                        <div>
+                          <img
+                            src="aset/batik (10).png"
+                            class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
+                            alt="gambar batik putih"
+                          />
+
+                          <h5
+                            class="font-sans capitalize text-md text-gray-600 text-center mt-4"
+                          >
+                            batik pria katun full furing "Wirada Green"
+                          </h5>
+                          <div class="mt-2 flex justify-center gap-4">
+                            <h3 class="text-[22px] font-bold text-gray-700">
+                              Rp255.000
+                            </h3>
+                            <div class="flex items-end gap-1 text-red-500">
+                              <span
+                                class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
+                                >Promo</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Content section end -->
 
-    <!-- Content section start -->
-    <div class="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
-      <div class="pt-2">
-        <div class="px-5 mx-auto lg:px-32">
-          <div class="flex flex-wrap">
-            <div class="flex flex-wrap w-full lg:w-1/2">
-              <div class="w-full lg:w-1/2 p-1">
-                <!-- button start -->
-                <div class="w-full h-full">
-                  <!-- graph -->
-                  <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
-                  >
-                    <!-- text header -->
-                    <div>
-                      <img
-                        src="aset/batik (9).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
-                        alt="gambar batik putih"
-                      />
-
-                      <h5
-                        class="font-sans capitalize text-md text-gray-600 text-center mt-4"
-                      >
-                        batik pria semi sutra "surasakti black"
-                      </h5>
-                      <div class="mt-2 flex justify-center gap-4">
-                        <h3 class="text-[22px] font-bold text-gray-700">
-                          Rp400.000
-                        </h3>
-                        <div class="flex items-end gap-1 text-red-500">
-                          <span
-                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
-                            >Promo</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-1/2 p-1">
-                <!-- button start -->
-                <div class="w-full h-full">
-                  <!-- graph -->
-                  <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
-                  >
-                    <!-- text header -->
-                    <div>
-                      <img
-                        src="aset/batik (5).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
-                        alt="gambar batik putih"
-                      />
-
-                      <h5
-                        class="font-sans capitalize text-md text-gray-600 text-center mt-4"
-                      >
-                        batik pria katun Premium "jayawikata black"
-                      </h5>
-                      <div class="mt-2 flex justify-center gap-4">
-                        <h3 class="text-[22px] font-bold text-gray-700">
-                          Rp325.000
-                        </h3>
-                        <div class="flex items-end gap-1 text-red-500">
-                          <span
-                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
-                            >Promo</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex-wrap w-full lg:w-1/2">
-              <div class="w-full h-60 lg:h-40 p-1">
-                <img
-                  alt="gallery"
-                  class="block object-cover object-center w-full h-full rounded-lg"
-                  src="aset/promo/yellow.png"
-                />
-              </div>
-              <div class="w-full h-60 lg:h-40 p-1">
-                <img
-                  alt="gallery"
-                  class="block object-cover object-center w-full h-full rounded-lg"
-                  src="aset/promo/pink.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
-      <div class="pt-2">
-        <div class="px-5 mx-auto lg:px-32">
-          <div class="flex flex-wrap">
-            <div class="flex flex-wrap w-full">
-              <div class="w-full lg:w-1/4 p-1">
-                <!-- button start -->
-                <div class="w-full h-full">
-                  <!-- graph -->
-                  <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
-                  >
-                    <!-- text header -->
-                    <div>
-                      <img
-                        src="aset/batik (7).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
-                        alt="gambar batik putih"
-                      />
-
-                      <h5
-                        class="font-sans capitalize text-md text-gray-600 text-center mt-4"
-                      >
-                        batik pria katun full furing "jalasndha black"
-                      </h5>
-                      <div class="mt-2 flex justify-center gap-4">
-                        <h3 class="text-[22px] font-bold text-gray-700">
-                          Rp450.000
-                        </h3>
-                        <div class="flex items-end gap-1 text-red-500">
-                          <span
-                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
-                            >Promo</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-1/4 p-1">
-                <!-- button start -->
-                <div class="w-full h-full">
-                  <!-- graph -->
-                  <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
-                  >
-                    <!-- text header -->
-                    <div>
-                      <img
-                        src="aset/batik (1).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
-                        alt="gambar batik putih"
-                      />
-
-                      <h5
-                        class="font-sans capitalize text-md text-gray-600 text-center mt-4"
-                      >
-                        batik pria katun full furing "abaswa purple"
-                      </h5>
-                      <div class="mt-2 flex justify-center gap-4">
-                        <h3 class="text-[22px] font-bold text-gray-700">
-                          Rp400.000
-                        </h3>
-                        <div class="flex items-end gap-1 text-red-500">
-                          <span
-                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
-                            >Promo</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-1/4 p-1">
-                <!-- button start -->
-                <div class="w-full h-full">
-                  <!-- graph -->
-                  <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
-                  >
-                    <!-- text header -->
-                    <div>
-                      <img
-                        src="aset/batik (8).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
-                        alt="gambar batik putih"
-                      />
-
-                      <h5
-                        class="font-sans capitalize text-md text-gray-600 text-center mt-4"
-                      >
-                        batik pria katun full furing "senani black"
-                      </h5>
-                      <div class="mt-2 flex justify-center gap-4">
-                        <h3 class="text-[22px] font-bold text-gray-700">
-                          Rp450.000
-                        </h3>
-                        <div class="flex items-end gap-1 text-red-500">
-                          <span
-                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
-                            >Promo</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-1/4 p-1">
-                <!-- button start -->
-                <div class="w-full h-full">
-                  <!-- graph -->
-                  <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
-                  >
-                    <!-- text header -->
-                    <div>
-                      <img
-                        src="aset/batik (2).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
-                        alt="gambar batik putih"
-                      />
-
-                      <h5
-                        class="font-sans capitalize text-md text-gray-600 text-center mt-4"
-                      >
-                        batik pria katun full furing "durdharsa navy"
-                      </h5>
-                      <div class="mt-2 flex justify-center gap-4">
-                        <h3 class="text-[22px] font-bold text-gray-700">
-                          Rp450.000
-                        </h3>
-                        <div class="flex items-end gap-1 text-red-500">
-                          <span
-                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
-                            >Promo</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ml-auto lg:w-[75%] xl:w-[80%] 2xl:w-[92%]">
-      <div class="pt-2">
-        <div class="px-5 mx-auto lg:px-32">
-          <div class="flex flex-wrap">
-            <div class="flex flex-wrap w-full">
-              <div class="w-full lg:w-1/2 p-1">
-                <!-- button start -->
-                <div class="w-full h-full">
-                  <!-- graph -->
-                  <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
-                  >
-                    <!-- text header -->
-                    <div>
-                      <img
-                        src="aset/batik (3).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
-                        alt="gambar batik putih"
-                      />
-
-                      <h5
-                        class="font-sans capitalize text-md text-gray-600 text-center mt-4"
-                      >
-                        batik pria katun full furing "Dretapara Orange"
-                      </h5>
-                      <div class="mt-2 flex justify-center gap-4">
-                        <h3 class="text-[22px] font-bold text-gray-700">
-                          Rp450.000
-                        </h3>
-                        <div class="flex items-end gap-1 text-red-500">
-                          <span
-                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
-                            >Promo</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-1/2 p-1">
-                <!-- button start -->
-                <div class="w-full h-full">
-                  <!-- graph -->
-                  <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
-                  >
-                    <!-- text header -->
-                    <div>
-                      <img
-                        src="aset/batik (5).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
-                        alt="gambar batik putih"
-                      />
-
-                      <h5
-                        class="font-sans capitalize text-md text-gray-600 text-center mt-4"
-                      >
-                        batik pria katun no furing "Jayawikata Black"
-                      </h5>
-                      <div class="mt-2 flex justify-center gap-4">
-                        <h3 class="text-[22px] font-bold text-gray-700">
-                          Rp220.000
-                        </h3>
-                        <div class="flex items-end gap-1 text-red-500">
-                          <span
-                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
-                            >Promo</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-1/2 p-1">
-                <!-- button start -->
-                <div class="w-full h-full">
-                  <!-- graph -->
-                  <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
-                  >
-                    <!-- text header -->
-                    <div>
-                      <img
-                        src="aset/batik (7).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
-                        alt="gambar batik putih"
-                      />
-
-                      <h5
-                        class="font-sans capitalize text-md text-gray-600 text-center mt-4"
-                      >
-                        batik pria katun full furing "Rukma Black"
-                      </h5>
-                      <div class="mt-2 flex justify-center gap-4">
-                        <h3 class="text-[22px] font-bold text-gray-700">
-                          Rp350.000
-                        </h3>
-                        <div class="flex items-end gap-1 text-red-500">
-                          <span
-                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
-                            >Promo</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-1/2 p-1">
-                <!-- button start -->
-                <div class="w-full h-full">
-                  <!-- graph -->
-                  <div
-                    class="shadow-lg hover:scale-105 hover:shadow-2xl px-6 rounded-xl border border-gray-200 transition ease-in-out duration-200"
-                  >
-                    <!-- text header -->
-                    <div>
-                      <img
-                        src="aset/batik (10).png"
-                        class="w-56 h-64 lg:w-48 lg:h-48 mx-auto"
-                        alt="gambar batik putih"
-                      />
-
-                      <h5
-                        class="font-sans capitalize text-md text-gray-600 text-center mt-4"
-                      >
-                        batik pria katun full furing "Wirada Green"
-                      </h5>
-                      <div class="mt-2 flex justify-center gap-4">
-                        <h3 class="text-[22px] font-bold text-gray-700">
-                          Rp255.000
-                        </h3>
-                        <div class="flex items-end gap-1 text-red-500">
-                          <span
-                            class="text-green-500 rounded-lg bg-gray-50 p-2 font-bold mb-1"
-                            >Promo</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Content section end -->
   </body>
 
@@ -774,7 +698,9 @@
 
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // Burger menus
+  </script>
   <script>
     AOS.init();
   </script>

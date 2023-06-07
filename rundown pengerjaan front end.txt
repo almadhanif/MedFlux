@@ -33,3 +33,17 @@ membuat tampilan connected tools yang berisi code, tools name, on devices, room,
 day 7:
 membuat halaman superadmin untuk nurses, yang berisi add new admin dan admin list
 add new admin berisi data diri dgn rincian first name, last name, email, nip, ward of origin/ bangsal asal, password dan re enter password
+
+day 8 :
+membuat halaman list admin dengan isi device name, email, NIP, Wards, dan action
+* ganti bukan device name tp admin name
+membuat halaman add new device untuk admin
+
+day 9:
+membuat halaman connected device di halaman admin
+membuat halaman add new tools untuk admin
+membuat halaman connected tools untuk admin
+
+day 10:
+membuat halaman update tools untuk admin
+

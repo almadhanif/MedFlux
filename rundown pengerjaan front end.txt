@@ -9,6 +9,23 @@ merubah links di sidebar menjadi logo disamping nama nav, bkn logo diatas nama n
 mengganti logo tools menjadi logo di heroicons.com agar bisa menggunakan svg secara free
 
 membuat bagian content dari dashboard dengan background berwarna slate-50
-membuat responsive tampilan website dengan ditambah hamburger menu untuk menampilkan sidebar
+membuat responsive tampilan website di bagian topbar yang berisi nama hospital dan data user
 
 day 4:
+membuat sidebar dan hamburger menu sehingga bisa tampil jika kondisi layar kecil/responsive
+membuat modal jika kondisi:
+1. gagal login
+2. membuat yakin apakah ingin logout
+mengganti bahasa di personal information menjadi bahasa inggris
+membuat 4 buah kotak yang berisi TPM+logo, logo+status, capacity+logo, logo+prediction habis
+mengubah warna biru gelap menjadi bg-blue-400
+
+day 5 :
+membuat halaman dashboard untuk super admin dengan menambahkan navigasi perawat di sidebar
+membuat dropdownright button yang berisi add new device, connected device, dan device list
+membuat tampilan dari add new device
+membuat tampilan connected device dengan tampilan tabel yang berisi code, device name, room, patient, status, date history => added date expired date dan action
+
+day 6:
+membuat tampilan add tools
+membuat tampilan connected tools yang berisi code, tools name, on devices, room, status, date history => added date exp date, action

@@ -45,13 +45,13 @@
   </head>
   <body
     style="background-image: url(aset/bg/1-ori.jpeg)"
-    class="sm:bg-cover sm:bg-no-repeat h-full w-full rounded-md border border-gray-100"
+    class="w-full h-full border border-gray-100 rounded-md sm:bg-cover sm:bg-no-repeat"
   >
     <div
       class="relative py-16 before:absolute before:inset-0 before:w-full before:h-[50%] before:bg-darkblue"
     >
       <div
-        class="relative container m-auto px-6 text-gray-500 md:px-12 xl:px-40"
+        class="container relative px-6 m-auto text-gray-500 md:px-12 xl:px-40"
       >
         <div class="m-auto space-y-8 md:w-8/12 lg:w-full">
           <div>
@@ -61,7 +61,7 @@
               class="w-32 h-32 ml-10 lg:hidden"
               alt="Permata indah logo"
             />
-            <p class="uppercase font-poppins text-white text-xl lg:hidden">
+            <p class="text-xl text-white uppercase font-poppins lg:hidden">
               Permata Indah Hospital
             </p>
           </div>
@@ -72,13 +72,13 @@
               <div class="rounded-lg lg:block" hidden>
                 <img
                   src="aset/loginPoster1.png"
-                  class="rounded-l-xl object-cover"
+                  class="object-cover rounded-l-xl"
                   loading="lazy"
                   alt="background Login"
                 />
               </div>
               <div class="p-6 sm:p-16">
-                <h2 class="mb-8 text-xl text-white capitalize font-bold">
+                <h2 class="mb-8 text-xl font-bold text-white capitalize">
                   Fill your personal information here:
                 </h2>
                 <form action="dashboard.html" class="space-y-4">
@@ -89,7 +89,7 @@
                       name="username"
                       id="username"
                       placeholder="Mardiyatun"
-                      class="block w-full px-4 py-3 rounded-md border border-gray-300 text-gray-600 transition duration-300 focus:ring-2 focus:ring-softblue focus:outline-none invalid:ring-2 invalid:ring-red-400"
+                      class="block w-full px-4 py-3 text-gray-600 transition duration-300 border border-gray-300 rounded-md focus:ring-2 focus:ring-softblue focus:outline-none invalid:ring-2 invalid:ring-red-400"
                     />
                   </div>
 
@@ -102,7 +102,7 @@
                       name="NIP"
                       id="NIP"
                       placeholder="1234567891"
-                      class="block w-full px-4 py-3 rounded-md border border-gray-300 text-gray-600 transition duration-300 focus:ring-2 focus:ring-softblue focus:outline-none invalid:ring-2 invalid:ring-red-400"
+                      class="block w-full px-4 py-3 text-gray-600 transition duration-300 border border-gray-300 rounded-md focus:ring-2 focus:ring-softblue focus:outline-none invalid:ring-2 invalid:ring-red-400"
                     />
                   </div>
                   <div>
@@ -114,24 +114,24 @@
                       name="pwd"
                       id="pwd"
                       placeholder="**********"
-                      class="block w-full px-4 py-3 rounded-md border border-gray-300 text-gray-600 transition duration-300 focus:ring-2 focus:ring-softblue focus:outline-none invalid:ring-2 invalid:ring-red-400"
+                      class="block w-full px-4 py-3 text-gray-600 transition duration-300 border border-gray-300 rounded-md focus:ring-2 focus:ring-softblue focus:outline-none invalid:ring-2 invalid:ring-red-400"
                     />
                   </div>
 
                   <button
                     id="submitNurse"
-                    class="w-full py-3 px-6 rounded-md bg-softgreen text-slate-700 active:text-white active:bg-darkblue"
+                    class="w-full px-6 py-3 rounded-md bg-softgreen text-slate-700 active:text-white active:bg-darkblue"
                   >
-                    <span class="font-nobile font-bold">Login</span>
+                    <span class="font-bold font-nobile">Login</span>
                   </button>
 
-                  <p class="border-t pt-6 text-sm text-gray-200">
+                  <p class="pt-6 text-sm text-gray-200 border-t">
                     Login for Owner ?
                     <a href="superLogin.html" class="text-[#FFD700]">Login</a>
                   </p>
                 </form>
                 <div
-                  class="text-center mt-20 text-gray-300 font-inter font-bold space-x-4"
+                  class="mt-20 space-x-4 font-bold text-center text-gray-300 font-inter"
                 >
                   <span>&copy; Sifis</span>
                   <a href="#" class="text-sm hover:text-white">Contact</a>

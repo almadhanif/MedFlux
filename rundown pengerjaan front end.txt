@@ -29,3 +29,7 @@ membuat tampilan connected device dengan tampilan tabel yang berisi code, device
 day 6:
 membuat tampilan add tools
 membuat tampilan connected tools yang berisi code, tools name, on devices, room, status, date history => added date exp date, action
+
+day 7:
+membuat halaman superadmin untuk nurses, yang berisi add new admin dan admin list
+add new admin berisi data diri dgn rincian first name, last name, email, nip, ward of origin/ bangsal asal, password dan re enter password

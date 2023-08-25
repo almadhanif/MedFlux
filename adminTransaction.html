@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: '16px',
+          },
+          extend: {
+            colors: {
+              bluelogo: '#1B81B0',
+              bluegradient: '#D7E0F1',
+              homebg: '#1B81B0',
+              kuning: '#FFCA4B',
+              darkblue: '#000C66',
+              softblue: '#D4F1F4',
+              softgreen: '#75E6DA',
+              textcolor: '#3967CD',
+              graybg: '#F3F3F3',
+            },
+            fontFamily: {
+              poppins: ['Poppins'],
+              nobile: ['Nobile'],
+              nunito: ['Nunito'],
+              inter: ['Inter'],
+            },
+            screens: {
+              '2xl': '1320px',
+            },
+          },
+        },
+      };
+    </script>
+
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="icon" href="aset/mainLogo.png" type="image/gif" sizes="5x5" />
+  </head>
+  <body
+    class="w-full h-full border border-gray-100 rounded-md sm:bg-cover sm:bg-no-repeat"
+  >
+    <section
+      class="relative py-5 before:absolute before:inset-0 bg-gradient-to-r from-bluegradient to-white"
+    >
+      <div class="container relative m-auto text-gray-500">
+        <div class="m-auto space-y-8 md:w-8/12 lg:w-full">
+          <div class="flex justify-between">
+            <p class="text-3xl text-bluelogo font-bold font-nunito">MedFlux</p>
+            <div
+              class="w-9 h-9 p-2 mr-3 rounded-full flex justify-center items-center bg-homebg border border-slate-300 hover:border-ijoterang hover:bg-ijo hover:text-white"
+            >
+              <img
+                class="fill-current"
+                src="aset/logo/Home.png"
+                alt="home logo"
+              />
+            </div>
+          </div>
+          <button class="flex gap-4 pb-44">
+            <a href="adminDashboard.html">
+              <nav id="homepage">
+                <p class="font-inter text-base text-black px-3 py-2 rounded-lg">
+                  Homepage
+                </p>
+              </nav>
+            </a>
+            <a href="adminTransaction.html">
+              <nav id="transaksi">
+                <p
+                  class="bg-homebg text-base font-inter text-slate-100 px-3 py-2 rounded-lg"
+                >
+                  Transaction
+                </p>
+              </nav>
+            </a>
+            <a href="adminStock.html">
+              <nav id="stok">
+                <p class="font-inter text-base text-black px-3 py-2 rounded-lg">
+                  Stock
+                </p>
+              </nav>
+            </a>
+          </button>
+          <div class="w-full h-full" id="information">
+            <div class="container">
+              <div
+                class="w-1/3 h-[58%] absolute -translate-x-[23%] top-[60%] left-[9%] bg-white rounded-lg border pt-8"
+              >
+                <div class="flex">
+                  <div class="w-full flex-wrap mx-auto">
+                    <table
+                      class="w-full border-b text-sm text-left text-gray-500 dark:text-gray-400"
+                    >
+                      <thead class="text-lg text-gray-700 capitalize">
+                        <tr class="">
+                          <th
+                            scope="col"
+                            class="px-1 text-homebg font-inter font-normal"
+                          >
+                            <button class="pb-5 mx-5">
+                              <a href="adminTransaction.html">
+                                Transaction Dashboard
+                              </a>
+                            </button>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <table
+                      class="w-full mt-3 text-sm text-left text-gray-500 dark:text-gray-400"
+                    >
+                      <thead class="text-lg text-gray-700 capitalize">
+                        <tr class="">
+                          <th
+                            scope="col"
+                            class="px-1 pt-4 font-inter font-normal"
+                          >
+                            <button class="pb-5 mx-5">
+                              <a href="TransactionData.html">
+                                Transaction Data
+                              </a>
+                            </button>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-1/3 h-[1050px] absolute -translate-x-[23%] top-[123%] left-[9%] bg-white rounded-lg border pt-8"
+              >
+                <div class="flex">
+                  <div class="w-full flex-wrap mx-auto">
+                    <table
+                      class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+                    >
+                      <thead class="text-lg text-gray-700 capitalize">
+                        <tr class="">
+                          <th
+                            scope="col"
+                            class="px-1 text-black font-inter font-bold"
+                          >
+                            <iframe
+                              width="400"
+                              height="900"
+                              class="ml-5"
+                              src="https://lookerstudio.google.com/embed/reporting/10ca24f0-6425-4a4f-a84c-20b5226c3d99/page/p_x4y1raz88c"
+                              frameborder="0"
+                              style="border: 0"
+                            ></iframe>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-[61%] h-[244%] absolute translate-x-1/2 top-[60%] left-[7%] bg-white rounded-xl px-6 border pt-2"
+              >
+                <div class="w-full">
+                  <div class="container px-6 mx-auto justify-between flex">
+                    <h2 class="text-black font-bold mt-2 font-inter text-lg">
+                      Transaction - Time Series
+                    </h2>
+                    <div class="flex gap-2 mt-10">
+                      <div class="flex border rounded-lg p-2 bg-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                          />
+                        </svg>
+                        <p class="mx-2">Date Range</p>
+                      </div>
+                      <div class="flex border rounded-lg p-2 bg-white">
+                        <p class="mx-2">Drug Name</p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-4 h-4 mt-[5px]"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="flex border rounded-lg p-2 bg-homebg text-white"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 4.5v15m7.5-7.5h-15"
+                          />
+                        </svg>
+
+                        <p class="mx-2">Transaction</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <iframe
+                    width="750"
+                    height="500"
+                    class="mt-2"
+                    src="https://lookerstudio.google.com/embed/reporting/10ca24f0-6425-4a4f-a84c-20b5226c3d99/page/p_qzfggwy88c"
+                    frameborder="0"
+                    style="border: 0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div
+                class="w-[61%] h-[183%] absolute translate-x-1/2 top-[310%] left-[7%] bg-white rounded-xl px-6 border pt-2"
+              >
+                <div class="w-full">
+                  <div class="container px-6 mx-auto justify-between flex">
+                    <h2 class="text-black font-bold mt-2 font-inter text-lg">
+                      Transaction - Buyer Disease
+                    </h2>
+                    <div class="flex gap-2 mt-10">
+                      <div class="flex border rounded-lg p-2 bg-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                          />
+                        </svg>
+                        <p class="mx-2">Date Range</p>
+                      </div>
+                      <div
+                        class="flex border rounded-lg p-2 bg-homebg text-white"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 4.5v15m7.5-7.5h-15"
+                          />
+                        </svg>
+
+                        <p class="mx-2">Transaction</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <iframe
+                    width="750"
+                    height="420"
+                    class="ml-2"
+                    src="https://lookerstudio.google.com/embed/reporting/10ca24f0-6425-4a4f-a84c-20b5226c3d99/page/p_qs7h34y88c"
+                    frameborder="0"
+                    style="border: 0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="transactionrow"
+      class="mt-[450px] lg:invisible mb-10 w-full h-full"
+    >
+      <div class="container">
+        <div class="grid grid-cols-2 h-96 pt-32 gap-4">
+          <div class="w-full py-5 rounded-lg border-2">
+            <div class="container px-6 mx-auto justify-between flex">
+              <h2 class="text-black font-bold mt-2 font-inter text-lg">
+                Transaction History
+              </h2>
+              <div class="flex border rounded-lg p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                  />
+                </svg>
+                <p class="mx-2">Date Range</p>
+              </div>
+            </div>
+            <iframe
+              width="580"
+              height="400"
+              class="ml-7 mt-2"
+              src="https://lookerstudio.google.com/embed/reporting/fe098509-35ef-4cd8-930f-57a389280509/page/p_v73ppjq88c"
+              frameborder="0"
+              style="border: 0"
+            ></iframe>
+          </div>
+          <div class="w-full py-5 rounded-lg border-2">
+            <div class="container px-6 mx-auto justify-between flex">
+              <h2 class="text-black font-bold mt-2 font-inter text-lg">
+                Transaction History
+              </h2>
+              <div class="flex border rounded-lg p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                  />
+                </svg>
+                <p class="mx-2">Date Range</p>
+              </div>
+            </div>
+            <iframe
+              width="580"
+              height="400"
+              class="ml-7 mt-2"
+              src="https://lookerstudio.google.com/embed/reporting/fe098509-35ef-4cd8-930f-57a389280509/page/p_v73ppjq88c"
+              frameborder="0"
+              style="border: 0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="transactionrow2" class="mt-36 mb-10 w-full h-full">
+      <div class="container flex">
+        <div class="w-full mx-auto h-full pt-32">
+          <div class="w-full h-full mx-auto py-5 rounded-lg border-2">
+            <div class="container px-6 mx-auto justify-between flex">
+              <h2 class="text-black font-bold mt-2 font-inter text-lg">
+                Transaction - Buyyer Domicille
+              </h2>
+            </div>
+            <iframe
+              width="1250"
+              height="600"
+              class="ml-7 mt-2"
+              src="https://lookerstudio.google.com/embed/reporting/10ca24f0-6425-4a4f-a84c-20b5226c3d99/page/p_2n90pzy88c"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
